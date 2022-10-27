@@ -1,10 +1,5 @@
 package;
 
-import flixel.util.FlxTimer;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import openfl.geom.Rectangle;
-import flixel.text.FlxText;
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.FlxSubState;

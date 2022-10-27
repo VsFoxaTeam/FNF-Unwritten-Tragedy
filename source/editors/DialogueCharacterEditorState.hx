@@ -419,18 +419,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 		updateTextBox();
 	}
 
-	private static var DEFAULT_TEXT:String = 'Psych Engine v' + MainMenuState.psychEngineVersion + ': Extra Keys';
-	function reloadText() {
-		if(daText != null) {
-			daText.kill();
-			hudGroup.remove(daText);
-			daText.destroy();
-		}
-		daText = new TypedAlphabet(DialogueBoxPsych.DEFAULT_TEXT_X, DialogueBoxPsych.DEFAULT_TEXT_Y, DEFAULT_TEXT, 0.05, false);
-		daText.scaleX = 0.7;
-		daText.scaleY = 0.7;
-		hudGroup.add(daText);
-	}
+	private static var DEFAULT_TEXT:String = 'Lorem ipsum dolor sit amet';
 
 	function reloadCharacter() {
 		var charsArray:Array<DialogueCharacter> = [character, ghostLoop, ghostIdle];

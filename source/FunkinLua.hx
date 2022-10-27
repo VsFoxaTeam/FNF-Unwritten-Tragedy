@@ -126,7 +126,6 @@ class FunkinLua {
 		set('songName', PlayState.SONG.song);
 		set('songPath', Paths.formatToSongPath(PlayState.SONG.song));
 		set('startedCountdown', false);
-		set('mania', PlayState.mania);
 		set('curStage', PlayState.SONG.stage);
 
 		set('isStoryMode', PlayState.isStoryMode);
@@ -175,7 +174,7 @@ class FunkinLua {
 		set('botPlay', PlayState.instance.cpuControlled);
 		set('practice', PlayState.instance.practiceMode);
 
-		for (i in 0...PlayState.mania) {
+		for (i in 0...4) {
 			set('defaultPlayerStrumX' + i, 0);
 			set('defaultPlayerStrumY' + i, 0);
 			set('defaultOpponentStrumX' + i, 0);
@@ -1624,9 +1623,6 @@ class FunkinLua {
 				default:
 					PlayState.instance.boyfriendGroup.y = value;
 			}
-		});
-		Lua_helper.add_callback(lua, "changeMania", function(newValue:Int, skipTwn:Bool = false) {
-			PlayState.instance.changeMania(newValue, skipTwn);
 		});
 		Lua_helper.add_callback(lua, "cameraSetTarget", function(target:String) {
 			var isDad:Bool = false;

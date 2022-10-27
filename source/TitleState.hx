@@ -81,14 +81,10 @@ class TitleState extends MusicBeatState
 	#end
 
 	var mustUpdate:Bool = false;
-	var mustUpdateEK:Bool = false;
-	public static var newVersion:String = '';
-	public static var newEKVersion:String = '';
 
 	var titleJSON:TitleData;
 
 	public static var updateVersion:String = '';
-	public static var extraKeyUpdateVersion:String = '';
 
 	override public function create():Void
 	{
@@ -133,7 +129,7 @@ class TitleState extends MusicBeatState
 		swagShader = new ColorSwap();
 		super.create();
 
-		FlxG.save.bind('funkin', 'tposejank');
+		FlxG.save.bind('funkin', 'ninjamuffin99');
 
 		ClientPrefs.loadPrefs();
 
@@ -144,35 +140,12 @@ class TitleState extends MusicBeatState
 
 			http.onData = function (data:String)
 			{
-				newVersion = data;
 				updateVersion = data.split('\n')[0].trim();
 				var curVersion:String = MainMenuState.psychEngineVersion.trim();
 				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
 				if(updateVersion != curVersion) {
 					trace('versions arent matching!');
 					mustUpdate = true;
-				}
-			}
-
-			http.onError = function (error) {
-				trace('error: $error');
-			}
-
-			http.request();
-
-			//  extra keys updates
-			trace('checking for ek update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/tposejank/FNF-PsychEngine/extra-keys/gitEKVersion.txt");
-
-			http.onData = function (data:String)
-			{
-				newEKVersion = data;
-				extraKeyUpdateVersion = data.split('\n')[0].trim();
-				var curVersion:String = MainMenuState.extraKeysVersion.trim();
-				trace('ek version online: ' + extraKeyUpdateVersion + ', your ek version: ' + curVersion);
-				if(extraKeyUpdateVersion != curVersion) {
-					trace('versions arent matching!');
-					mustUpdateEK = true;
 				}
 			}
 
@@ -426,10 +399,10 @@ class TitleState extends MusicBeatState
 
 		credTextShit.visible = false;
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('extra-keys/extra-keys-logo')); // no more newground
+		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
 		add(ngSpr);
 		ngSpr.visible = false;
-		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.5));
+		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
 		ngSpr.updateHitbox();
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = ClientPrefs.globalAntialiasing;
@@ -532,8 +505,8 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					if (mustUpdate || mustUpdateEK) {
-						MusicBeatState.switchState(new OutdatedState(newVersion, mustUpdateEK, newEKVersion));
+					if (mustUpdate) {
+						MusicBeatState.switchState(new OutdatedState());
 					} else {
 						MusicBeatState.switchState(new MainMenuState());
 					}
@@ -690,16 +663,12 @@ class TitleState extends MusicBeatState
 				// credTextShit.screenCenter();
 				case 6:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Extra Keys by'], -40);
+					createCoolText(['Not associated', 'with'], -40);
 					#else
 					createCoolText(['In association', 'with'], -40);
 					#end
 				case 8:
-					#if PSYCH_WATERMARKS
-					addMoreText('tposejank');
-					#else
 					addMoreText('newgrounds', -40);
-					#end
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 9:
@@ -721,25 +690,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 14:
-					#if PSYCH_WATERMARKS
-					addMoreText('Friday Night Funkin');
-					#else
 					addMoreText('Friday');
-					#end
 				// credTextShit.visible = true;
 				case 15:
-					#if PSYCH_WATERMARKS
-					addMoreText('Psych Engine');
-					#else
 					addMoreText('Night');
-					#end
 				// credTextShit.text += '\nNight';
 				case 16:
-					#if PSYCH_WATERMARKS
-					addMoreText('Extra Keys');
-					#else
-					addMoreText('Funkin');
-					#end
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();
