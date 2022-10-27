@@ -196,6 +196,7 @@ class PlayState extends MusicBeatState
 
 	private var generatedMusic:Bool = false;
 	public var endingSong:Bool = false;
+	public static var exitingsong:Bool = false;
 	public var startingSong:Bool = false;
 	private var updateTime:Bool = true;
 	public static var changedDifficulty:Bool = false;
@@ -3089,6 +3090,8 @@ class PlayState extends MusicBeatState
 			iconP2.animation.curAnim.curFrame = 0;
 
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
+			callOnLuas('onExitSong', []);
+			exitingsong = true;
 			persistentUpdate = false;
 			paused = true;
 			cancelMusicFadeTween();
@@ -3366,6 +3369,8 @@ class PlayState extends MusicBeatState
 
 	function openChartEditor()
 	{
+		callOnLuas('onExitSong', []);
+		exitingsong = true;
 		persistentUpdate = false;
 		paused = true;
 		cancelMusicFadeTween();
@@ -3983,6 +3988,8 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
+					callOnLuas('onExitSong', []);
+					exitingsong = true;
 					WeekData.loadTheFirstEnabledMod();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
@@ -4048,6 +4055,8 @@ class PlayState extends MusicBeatState
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
+				callOnLuas('onExitSong', []);
+				exitingsong = true;
 				WeekData.loadTheFirstEnabledMod();
 				cancelMusicFadeTween();
 				if(FlxTransitionableState.skipNextTransIn) {
