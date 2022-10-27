@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				14,
+				10
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singUP",
+			"loop": true,
+			"name": "Screaming Up"
+		},
+		{
+			"offsets": [
+				20,
+				10
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": true,
+			"name": "Screaming Down"
+		},
+		{
+			"offsets": [
+				20,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Screaming Idle"
+		},
+		{
+			"offsets": [
+				31,
+				10
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singLEFT",
+			"loop": true,
+			"name": "Screaming Left"
+		},
+		{
+			"offsets": [
+				20,
+				7
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": true,
+			"name": "Screaming Right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ScreamingFaded",
+	"position": [
+		10,
+		0
+	],
+	"healthicon": "SadFox",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-240,
+		110
+	],
+	"sing_duration": 6.1,
+	"scale": 1.1
+}

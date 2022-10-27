@@ -1,0 +1,229 @@
+{
+	"song": {
+		"speed": 2.3,
+		"stage": "Black",
+		"player1": "BoyfriendGONE",
+		"player2": "FoxaSad",
+		"player3": null,
+		"events": [
+			[
+				9600,
+				[
+					[
+						"Change Character",
+						"0",
+						"BoyfriendFaded"
+					]
+				]
+			],
+			[
+				28800,
+				[
+					[
+						"Change Character",
+						"0",
+						"BoyfriendGONE"
+					]
+				]
+			],
+			[
+				30600,
+				[
+					[
+						"Change Character",
+						"1",
+						"MadFox"
+					]
+				]
+			],
+			[
+				31200,
+				[
+					[
+						"Image Event",
+						"mid",
+						"0.2"
+					]
+				]
+			],
+			[
+				36000,
+				[
+					[
+						"Change Character",
+						"0",
+						"BFLOL"
+					],
+					[
+						"Change Character",
+						"1",
+						"FoxaGONE"
+					]
+				]
+			],
+			[
+				40800,
+				[
+					[
+						"Change Character",
+						"1",
+						"MadFox"
+					],
+					[
+						"Change Character",
+						"0",
+						"BoyfriendGONE"
+					]
+				]
+			],
+			[
+				45600,
+				[
+					[
+						"Change Character",
+						"0",
+						"BFLOL"
+					],
+					[
+						"Change Character",
+						"1",
+						"MadFoxFaded"
+					]
+				]
+			],
+			[
+				55200,
+				[
+					[
+						"Change Character",
+						"1",
+						"MadFox"
+					],
+					[
+						"Change Character",
+						"0",
+						"BoyfriendGONE"
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Change Character",
+						"0",
+						"BFLOL"
+					],
+					[
+						"Change Character",
+						"1",
+						"FoxaGONE"
+					]
+				]
+			],
+			[
+				64800,
+				[
+					[
+						"Image Event",
+						"lol",
+						"0.2"
+					],
+					[
+						"Change Character",
+						"1",
+						"Screaming"
+					],
+					[
+						"Change Character",
+						"0",
+						"BoyfriendGONE"
+					]
+				]
+			],
+			[
+				69600,
+				[
+					[
+						"Change Character",
+						"1",
+						"FoxaGONE"
+					],
+					[
+						"Change Character",
+						"0",
+						"BFLOL"
+					]
+				]
+			],
+			[
+				74400,
+				[
+					[
+						"Change Character",
+						"0",
+						"BoyfriendGONE"
+					],
+					[
+						"Change Character",
+						"1",
+						"Screaming"
+					]
+				]
+			],
+			[
+				79200,
+				[
+					[
+						"Change Character",
+						"1",
+						"ScreamingFaded"
+					],
+					[
+						"Change Character",
+						"0",
+						"BFLOL"
+					]
+				]
+			],
+			[
+				127200,
+				[
+					[
+						"Change Character",
+						"1",
+						"FoxaFaded"
+					]
+				]
+			],
+			[
+				134400,
+				[
+					[
+						"Change Character",
+						"1",
+						"ScreamingFaded"
+					]
+				]
+			],
+			[
+				136800,
+				[
+					[
+						"Change Character",
+						"1",
+						"FoxaFaded"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "invisible",
+		"bpm": 100,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Criticize"
+	}
+}

@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BoyfriendLOL BFRight"
+		},
+		{
+			"offsets": [
+				-18,
+				3
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BoyfriendLOL BFLeft"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "BoyfriendLOL BFIdle"
+		},
+		{
+			"offsets": [
+				-10,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BoyfriendLOL BFDown"
+		},
+		{
+			"offsets": [
+				-29,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BoyfriendLOL BFUp"
+		},
+		{
+			"offsets": [
+				-13,
+				9
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BoyfriendLOL MissLeft"
+		},
+		{
+			"offsets": [
+				-6,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BoyfriendLOL MissUp"
+		},
+		{
+			"offsets": [
+				-15,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BoyfriendLOL MissDown"
+		},
+		{
+			"offsets": [
+				-24,
+				12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BoyfriendLOL MissRight"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/BoyfriendGONE",
+	"position": [
+		-700,
+		-20
+	],
+	"healthicon": "BFLOL",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		-100,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

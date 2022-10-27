@@ -1,0 +1,95 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.08,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "In this virtual world..."
+		},
+		{
+			"speed": 0.08,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "and in this game especially..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "There are tons of mods, tons of work built into each section of FNF..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "There are even mods that were built with low effort on purpose. maybe even a completely different style or twist to the game."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But not all mods have a crazy mechanic..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "And not all mods have the highest quality, Even if the creator did everything in their power to make lore, a good character, etc..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Foxa, for example, was added into an FNF mod to extend the lore of VS.Whitty..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Its first impression was rather saddening upon its first appearence to the public. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "People could have been desperate to win the giveaway, while others may have thought the mod was only using Whitty's fame to grow."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "The lore, the character and everything along with that mod shall stay the same..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "However, style reguarding how things are done, have changed since then."
+		},
+		{
+			"speed": 0.1,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "So with THIS mod..."
+		},
+		{
+			"speed": 0.16,
+			"portrait": "GONE",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let's try again..."
+		}
+	]
+}

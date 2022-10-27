@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				37,
+				13
+			],
+			"anim": "deathLoop",
+			"fps": 15,
+			"name": "death Death Idle",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				37,
+				13
+			],
+			"anim": "firstDeath",
+			"fps": 15,
+			"name": "death Death Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				16
+			],
+			"anim": "deathConfirm",
+			"fps": 10,
+			"name": "death DeathConfirm",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/death",
+	"position": [
+		-620,
+		40
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
