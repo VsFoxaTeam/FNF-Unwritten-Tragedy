@@ -9,8 +9,8 @@ function onCreatePost()
   setProperty('timeBarBG.visible',false)
   setProperty('timeBar.visible',false)
   setProperty('scoreTxt.visible',false)
-  setTextFont('botplayTxt', 'segoeprb.ttf')
-  setTextFont('timeTxt', 'segoeprb.ttf')
+  setTextFont('botplayTxt', 'vcr.ttf')
+  setTextFont('timeTxt', 'vcr.ttf')
 
 
   makeLuaText('ghudscoreTxt', 'Score: 0 | Misses: 0 | Accuracy: 0%', 1280, 0, (downscroll and 114 or 686));
