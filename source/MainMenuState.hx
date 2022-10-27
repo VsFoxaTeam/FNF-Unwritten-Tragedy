@@ -1,5 +1,6 @@
 package;
 
+import flixel.util.FlxTimer;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -26,7 +27,9 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
+	public static var extraKeysVersion:String = '0.2.9';
 	public static var curSelected:Int = 0;
+	public static var launchChance:Dynamic = null;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
@@ -46,6 +49,7 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
+	var qatarText:FlxText;
 
 	override function create()
 	{
@@ -129,15 +133,41 @@ class MainMenuState extends MusicBeatState
 		}
 
 		FlxG.camera.follow(camFollowPos, null, 1);
+		
+		if (FlxG.save.data.firstTimeUsing == null) {
+			FlxG.save.data.firstTimeUsing = true;
+		}
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
+		var texts:Array<String> = [
+			"Friday Night Funkin' v" + Application.current.meta.get('version'),
+			"Psych Engine v" + psychEngineVersion,
+			"Psych Engine Extra Keys v" + extraKeysVersion
+		];
+		var ad:Array<String> = [
+			qatarShit(),
+			"Time until Qatar 2022"
+		];
+
+		for (line in ad) texts.push(line);
+
+		for (i in 0...texts.length) {
+			var versionShit:FlxText = new FlxText(12, (FlxG.height - 24) - (18 * i), 0, texts[i], 12);
+			versionShit.scrollFactor.set();
+			versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			add(versionShit);
+
+			if (i == texts.length - 2) // position of the qatar shit
+				{
+					qatarText = versionShit;
+				}
+		}
+
+		new FlxTimer().start(1, function(tmr:FlxTimer) {
+			if (qatarText != null)
+				qatarText.text = qatarShit();
+
+			tmr.reset(1); // infinite woah
+		});
 
 		// NG.core.calls.event.logEvent('swag').send();
 
@@ -157,6 +187,40 @@ class MainMenuState extends MusicBeatState
 		#end
 
 		super.create();
+	}
+
+	function qatarShit():String {
+		var leGoal = new Date(2022, 11, 21, 12, 0, 0).getTime();
+
+		var second = 1000;
+		var minute = second * 60;
+		var hour = minute * 60;
+		var day = hour * 24;
+
+		var leDate = Date.now().getTime();
+		var timeLeft = leGoal - leDate;
+
+		var shitArray:Array<Dynamic> = [
+			Math.floor(timeLeft / (day)),
+         	Math.floor((timeLeft % (day)) / (hour)),
+			Math.floor((timeLeft % (hour)) / (minute)),
+        	Math.floor((timeLeft % (minute)) / second)
+		];
+
+		var zeroShitArray:Array<String> = ["day","hour","minute","second"];
+		
+		var leftTime:String = "";
+
+		for (i in 0...shitArray.length) {
+			if (shitArray[i] < 10) {
+				zeroShitArray[i] = '0' + shitArray[i];
+			} else zeroShitArray[i] = '' + shitArray[i];
+			var dosPuntos:String = (i > 0 && i < shitArray.length) ? ":" : "";
+
+			leftTime += dosPuntos + zeroShitArray[i];
+		}
+
+		return leftTime;
 	}
 
 	#if ACHIEVEMENTS_ALLOWED
@@ -212,6 +276,7 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
+					FlxG.mouse.visible = false;
 
 					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 

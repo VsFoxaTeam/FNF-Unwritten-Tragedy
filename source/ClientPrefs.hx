@@ -20,18 +20,30 @@ class ClientPrefs {
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;
+	public static var camMovement:Bool = true;
 	public static var hideHud:Bool = false;
 	public static var noteOffset:Int = 0;
-	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
+	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0],
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0], 
+													[0, 0, 0], [0, 0, 0]]; // Fuck
+	public static var imagesPersist:Bool = false;
 	public static var ghostTapping:Bool = true;
 	public static var timeBarType:String = 'Time Left';
 	public static var scoreZoom:Bool = true;
 	public static var noReset:Bool = false;
 	public static var healthBarAlpha:Float = 1;
-	public static var controllerMode:Bool = false;
 	public static var hitsoundVolume:Float = 0;
 	public static var pauseMusic:String = 'Tea Time';
 	public static var checkForUpdates:Bool = true;
+	public static var antimash:Bool = true;
+	public static var convertEK:Bool = true;
+	public static var showKeybindsOnStart:Bool = true;
 	public static var comboStacking = true;
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
@@ -63,11 +75,125 @@ class ClientPrefs {
 
 	//Every key has two binds, add your key bind down here and then add your control on options/ControlsSubState.hx and Controls.hx
 	public static var keyBinds:Map<String, Array<FlxKey>> = [
-		//Key Bind, Name for ControlsSubState
+		'note_one1'		=> [SPACE, NONE],
+
+		'note_two1'		=> [D, NONE],
+		'note_two2'		=> [K, NONE],
+
+		'note_three1'	=> [D, NONE],
+		'note_three2'	=> [SPACE, NONE],
+		'note_three3'	=> [K, NONE],
+
 		'note_left'		=> [A, LEFT],
 		'note_down'		=> [S, DOWN],
 		'note_up'		=> [W, UP],
 		'note_right'	=> [D, RIGHT],
+
+		'note_five1'	=> [D, NONE],
+		'note_five2'	=> [F, NONE],
+		'note_five3'	=> [SPACE, NONE],
+		'note_five4'	=> [J, NONE],
+		'note_five5'	=> [K, NONE],
+
+		'note_six1'		=> [S, NONE],
+		'note_six2'		=> [D, NONE],
+		'note_six3'		=> [F, NONE],
+		'note_six4'		=> [J, NONE],
+		'note_six5'		=> [K, NONE],
+		'note_six6'		=> [L, NONE],
+
+		'note_seven1'	=> [S, NONE],
+		'note_seven2'	=> [D, NONE],
+		'note_seven3'	=> [F, NONE],
+		'note_seven4'	=> [SPACE, NONE],
+		'note_seven5'	=> [J, NONE],
+		'note_seven6'	=> [K, NONE],
+		'note_seven7'	=> [L, NONE],
+
+		'note_eight1'	=> [A, NONE],
+		'note_eight2'	=> [S, NONE],
+		'note_eight3'	=> [D, NONE],
+		'note_eight4'	=> [F, NONE],
+		'note_eight5'	=> [H, NONE],
+		'note_eight6'	=> [J, NONE],
+		'note_eight7'	=> [K, NONE],
+		'note_eight8'	=> [L, NONE],
+
+		'note_nine1'	=> [A, NONE],
+		'note_nine2'	=> [S, NONE],
+		'note_nine3'	=> [D, NONE],
+		'note_nine4'	=> [F, NONE],
+		'note_nine5'	=> [SPACE, NONE],
+		'note_nine6'	=> [H, NONE],
+		'note_nine7'	=> [J, NONE],
+		'note_nine8'	=> [K, NONE],
+		'note_nine9'	=> [L, NONE],
+
+		'note_ten1'		=> [A, NONE],
+		'note_ten2'		=> [S, NONE],
+		'note_ten3'		=> [D, NONE],
+		'note_ten4'		=> [F, NONE],
+		'note_ten5'		=> [G, NONE],
+		'note_ten6'		=> [SPACE, NONE],
+		'note_ten7'		=> [H, NONE],
+		'note_ten8'     => [J, NONE],
+		'note_ten9'		=> [K, NONE],
+		'note_ten10'	=> [L, NONE],
+
+		'note_elev1'	=> [A, NONE],
+		'note_elev2'	=> [S, NONE],
+		'note_elev3'	=> [D, NONE],
+		'note_elev4'	=> [F, NONE],
+		'note_elev5'	=> [G, NONE],
+		'note_elev6'	=> [SPACE, NONE],
+		'note_elev7'	=> [H, NONE],
+		'note_elev8'    => [J, NONE],
+		'note_elev9'	=> [K, NONE],
+		'note_elev10'	=> [L, NONE],
+		'note_elev11'	=> [PERIOD, NONE],
+
+		// submitted by btoad#2337
+		'note_twel1'	=> [A, NONE],
+		'note_twel2'	=> [S, NONE],
+		'note_twel3'	=> [D, NONE],
+		'note_twel4'	=> [F, NONE],
+		'note_twel5'	=> [C, NONE],
+		'note_twel6'	=> [V, NONE],
+		'note_twel7'	=> [N, NONE],
+		'note_twel8'    => [M, NONE],
+		'note_twel9'	=> [H, NONE],
+		'note_twel10'	=> [J, NONE],
+		'note_twel11'	=> [K, NONE],
+		'note_twel12'	=> [L, NONE],
+
+		'note_thir1'	=> [A, NONE],
+		'note_thir2'	=> [S, NONE],
+		'note_thir3'	=> [D, NONE],
+		'note_thir4'	=> [F, NONE],
+		'note_thir5'	=> [C, NONE],
+		'note_thir6'	=> [V, NONE],
+		'note_thir7'	=> [SPACE, NONE],
+		'note_thir8'	=> [N, NONE],
+		'note_thir9'    => [M, NONE],
+		'note_thir10'	=> [H, NONE],
+		'note_thir11'	=> [J, NONE],
+		'note_thir12'	=> [K, NONE],
+		'note_thir13'	=> [L, NONE],
+
+		'note_fourt1'	=> [A, NONE],
+		'note_fourt2'	=> [S, NONE],
+		'note_fourt3'	=> [D, NONE],
+		'note_fourt4'	=> [F, NONE],
+		'note_fourt5'	=> [C, NONE],
+		'note_fourt6'	=> [V, NONE],
+		'note_fourt7'	=> [T, NONE],
+		'note_fourt8'    => [Y, NONE],
+		'note_fourt9'	=> [N, NONE],
+		'note_fourt10'	=> [M, NONE],
+		'note_fourt11'	=> [H, NONE],
+		'note_fourt12'	=> [J, NONE],
+		'note_fourt13'	=> [K, NONE],
+		'note_fourt14'	=> [L, NONE],
 		
 		'ui_left'		=> [A, LEFT],
 		'ui_down'		=> [S, DOWN],
@@ -86,12 +212,12 @@ class ClientPrefs {
 		'debug_1'		=> [SEVEN, NONE],
 		'debug_2'		=> [EIGHT, NONE]
 	];
-	public static var defaultKeys:Map<String, Array<FlxKey>> = null;
+	public static var defaultKeys:Map<String, Array<FlxKey>> = keyBinds;
 
-	public static function loadDefaultKeys() {
+	/*public static function loadDefaultKeys() {
 		defaultKeys = keyBinds.copy();
 		//trace(defaultKeys);
-	}
+	}*/
 
 	public static function saveSettings() {
 		FlxG.save.data.downScroll = downScroll;
@@ -107,9 +233,11 @@ class ClientPrefs {
 		//FlxG.save.data.cursing = cursing;
 		//FlxG.save.data.violence = violence;
 		FlxG.save.data.camZooms = camZooms;
+		FlxG.save.data.camMovement = camMovement;
 		FlxG.save.data.noteOffset = noteOffset;
 		FlxG.save.data.hideHud = hideHud;
 		FlxG.save.data.arrowHSV = arrowHSV;
+		FlxG.save.data.imagesPersist = imagesPersist;
 		FlxG.save.data.ghostTapping = ghostTapping;
 		FlxG.save.data.timeBarType = timeBarType;
 		FlxG.save.data.scoreZoom = scoreZoom;
@@ -125,16 +253,18 @@ class ClientPrefs {
 		FlxG.save.data.badWindow = badWindow;
 		FlxG.save.data.safeFrames = safeFrames;
 		FlxG.save.data.gameplaySettings = gameplaySettings;
-		FlxG.save.data.controllerMode = controllerMode;
 		FlxG.save.data.hitsoundVolume = hitsoundVolume;
 		FlxG.save.data.pauseMusic = pauseMusic;
 		FlxG.save.data.checkForUpdates = checkForUpdates;
+		FlxG.save.data.antimash = antimash;
+		FlxG.save.data.convertEK = convertEK;
 		FlxG.save.data.comboStacking = comboStacking;
+		FlxG.save.data.showKeybindsOnStart = showKeybindsOnStart;
 	
 		FlxG.save.flush();
 
 		var save:FlxSave = new FlxSave();
-		save.bind('controls_v2', 'ninjamuffin99'); //Placing this in a separate save so that it can be manually deleted without removing your Score and stuff
+		save.bind('controls_v2', 'tposejank'); //Placing this in a separate save so that it can be manually deleted without removing your Score and stuff
 		save.data.customControls = keyBinds;
 		save.flush();
 		FlxG.log.add("Settings saved!");
@@ -190,6 +320,9 @@ class ClientPrefs {
 		if(FlxG.save.data.camZooms != null) {
 			camZooms = FlxG.save.data.camZooms;
 		}
+		if(FlxG.save.data.camMovement != null) {
+			camMovement = FlxG.save.data.camMovement;
+		}
 		if(FlxG.save.data.hideHud != null) {
 			hideHud = FlxG.save.data.hideHud;
 		}
@@ -233,9 +366,6 @@ class ClientPrefs {
 		if(FlxG.save.data.safeFrames != null) {
 			safeFrames = FlxG.save.data.safeFrames;
 		}
-		if(FlxG.save.data.controllerMode != null) {
-			controllerMode = FlxG.save.data.controllerMode;
-		}
 		if(FlxG.save.data.hitsoundVolume != null) {
 			hitsoundVolume = FlxG.save.data.hitsoundVolume;
 		}
@@ -264,11 +394,21 @@ class ClientPrefs {
 		{
 			checkForUpdates = FlxG.save.data.checkForUpdates;
 		}
+		if (FlxG.save.data.antimash != null)
+		{
+			antimash = FlxG.save.data.antimash;
+		}
+		if (FlxG.save.data.convertEK != null)
+		{
+			convertEK = FlxG.save.data.convertEK;
+		}
 		if (FlxG.save.data.comboStacking != null)
 			comboStacking = FlxG.save.data.comboStacking;
+		if (FlxG.save.data.showKeybindsOnStart != null)
+			showKeybindsOnStart = FlxG.save.data.showKeybindsOnStart;
 
 		var save:FlxSave = new FlxSave();
-		save.bind('controls_v2', 'ninjamuffin99');
+		save.bind('controls_v2', 'tposejank');
 		if(save != null && save.data.customControls != null) {
 			var loadedControls:Map<String, Array<FlxKey>> = save.data.customControls;
 			for (control => keys in loadedControls) {

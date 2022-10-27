@@ -1,5 +1,8 @@
 package;
 
+import openfl.geom.Rectangle;
+import flixel.text.FlxText.FlxTextBorderStyle;
+import flixel.text.FlxText;
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.ui.FlxUIState;
