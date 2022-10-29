@@ -31,8 +31,24 @@ class Paths
 
 	#if MODS_ALLOWED
 	public static var ignoreModFolders:Array<String> = [
-		'characters', 'custom_events', 'custom_notetypes', 'data', 'songs', 'music', 'sounds', 'shaders', 'custom_states', 'videos', 'images', 'stages',
-		'weeks', 'fonts', 'scripts', 'achievements'
+		'characters',
+		'custom_events',
+		'custom_notetypes',
+		'data',
+		'songs',
+		'music',
+		'sounds',
+		'shaders',
+		'pyscripts' /* mag made the python stuff*/,
+		'modcharts,'
+		'custom_states',
+		'videos',
+		'images',
+		'stages',
+		'weeks',
+		'fonts',
+		'scripts',
+		'achievements'
 	];
 	#end
 
