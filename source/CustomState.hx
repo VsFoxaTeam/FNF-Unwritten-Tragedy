@@ -7,7 +7,6 @@ import Section.SwagSection;
 import Song.SwagSong;
 import WiggleEffect.WiggleEffectType;
 import flixel.FlxBasic;
-import Song.MidSongEvent;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import Controls.Control;
@@ -31,8 +30,6 @@ import flixel.math.FlxRect;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
-import CoolUtil;
-import flixel.ui.FlxButton;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
 import flixel.util.FlxCollision;
@@ -68,7 +65,7 @@ class CustomState extends MusicBeatState
 	var isMenuState:Bool;
 	var menuState:MainMenuState;
 
-	public static var filesInserted:Array<String> = [];
+	public static var filesPushed:Array<String> = [];
 
 	public static var interp:Interp;
 
@@ -82,10 +79,7 @@ class CustomState extends MusicBeatState
 
 	override public function create()
 	{
-		MemoryManager.freeTrashedAssets();
-		MemoryManager.freeAllAssets();
-
-		filesInserted = [];
+		filesPushed = [];
 
 		var folders:Array<String> = [Paths.getPreloadPath('custom_states/')];
 		folders.insert(0, Paths.modFolder('custom_states/'));
@@ -95,7 +89,7 @@ class CustomState extends MusicBeatState
 			{
 				for (file in FileSystem.readDirectory(folder))
 				{
-					if (file.endsWith('.hx') && !filesInserted.contains(file))
+					if (file.endsWith('.hx') && !filesPushed.contains(file))
 					{
 						var expr = File.getContent(Paths.state(file));
 						var parser = new hscript.Parser();
@@ -145,7 +139,7 @@ class CustomState extends MusicBeatState
 
 						interp.execute(ast);
 
-						filesInserted.push(file);
+						filesPushed.push(file);
 					}
 				}
 			}
