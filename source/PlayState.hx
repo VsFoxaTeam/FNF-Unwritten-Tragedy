@@ -63,9 +63,6 @@ using StringTools;
 #if desktop
 import Discord.DiscordClient;
 #end
-#if PYTHON_SCRIPTING
-import pythonUtil.Python;
-#end
 #if !flash
 import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
@@ -969,7 +966,7 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-		#if PYTHON_SCRIPTING
+		/*#if PYTHON_SCRIPTING
 		var filesPushed:Array<String> = [];
 		var foldersToCheck:Array<String> = [Paths.getPreloadPath('pyscripts/')];
 
@@ -993,7 +990,7 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
-		#end
+		#end*/
 
 		// STAGE SCRIPTS
 		#if (MODS_ALLOWED && LUA_ALLOWED)
@@ -1448,7 +1445,7 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-		#if PYTHON_SCRIPTING
+		/*#if PYTHON_SCRIPTING
 		var filesPushed:Array<String> = [];
 		var foldersToCheck:Array<String> = [Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/')];
 
@@ -1472,7 +1469,7 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
-		#end
+		#end*/
 
 		var daSong:String = Paths.formatToSongPath(curSong);
 		if (isStoryMode && !seenCutscene)

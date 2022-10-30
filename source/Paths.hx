@@ -39,7 +39,7 @@ class Paths
 		'music',
 		'sounds',
 		'shaders',
-		'pyscripts' /* mag made the python stuff*/,
+		//'pyscripts' /* mag made the python stuff*/,
 		'modcharts',
 		'custom_states',
 		'videos',
