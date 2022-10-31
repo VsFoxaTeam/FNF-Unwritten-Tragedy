@@ -43,13 +43,13 @@ class Main extends Sprite
 		Lib.current.addChild(new Main());
 	}
 
-	private function update()
+	/*private function update()
 	{
 		if (FlxG.keys.pressed.SHIFT && FlxG.keys.pressed.SEVEN)
 		{
 			flixel.addons.studio.FlxStudio.create();
 		}
-	}
+	}*/
 
 	public function new()
 	{
