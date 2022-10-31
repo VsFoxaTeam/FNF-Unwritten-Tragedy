@@ -47,7 +47,6 @@ jobs:
           haxelib install hxjsonast
           haxelib install hxCodec
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
-          haxelib git flixel-studio https://github.com/Dovyski/flixel-studio.git
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
@@ -89,7 +88,6 @@ jobs:
           haxelib install hxjsonast
           haxelib install hxCodec
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
-          haxelib git flixel-studio https://github.com/Dovyski/flixel-studio.git
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
@@ -132,7 +130,6 @@ jobs:
           haxelib install hxjsonast
           haxelib install hxCodec
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
-          haxelib git flixel-studio https://github.com/Dovyski/flixel-studio.git
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
