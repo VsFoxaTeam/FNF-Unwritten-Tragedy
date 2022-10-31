@@ -153,7 +153,7 @@
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape-haxe4" />-->
 
-        <haxelib name="flixel-studio"/>
+        <!--<haxelib name="flixel-studio"/>-->
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
@@ -182,7 +182,7 @@
 	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
 
 	<!--Allow working memory greater than 1 Gig-->
-	<!--haxedef name="HXCPP_GC_BIG_BLOCKS"-->
+	<haxedef name="HXCPP_GC_BIG_BLOCKS">
 	
 	<!-- Show debug traces for hxCodec -->
 	<haxedef name="HXC_DEBUG_TRACE" if="debug" />
