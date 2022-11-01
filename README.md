@@ -21,6 +21,7 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 ## FNF VS FOXA NOT OG CREDITS
 * Foxa - Creator
 * CharlesCatYT -  Programmer
+* stevecoderdev - Custom State Support
 
 ## Credits:
 * Shadow Mario - Programmer
