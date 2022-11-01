@@ -18,6 +18,10 @@ If you want video support on your mod, simply do `haxelib install hxCodec` on a 
 
 otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 
+## FNF VS FOXA NOT OG CREDITS
+* Foxa - Creator
+* CharlesCatYT -  Programmer
+
 ## Credits:
 * Shadow Mario - Programmer
 * RiverOaken - Artist
