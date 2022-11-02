@@ -1,5 +1,8 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+criticize flp cuz too big for github: https://drive.google.com/file/d/1AwSRwbwQLOJZO1tu2xIZewlcuQalcBPD/view?usp=sharing
+# Friday Night Funkin' - Journey Engine
+An engine based off on Psych Engine that was originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+
+(Made specififcally for this mod)
 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
@@ -16,6 +19,14 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
 
 otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
+
+## FNF VS FOXA NOT OG CREDITS
+* Foxa - Creator
+* CharlesCatYT -  Programmer & Composer
+* stevecoderdev - Custom State Support
+* Eventretta - Stage Editor
+* BeastlyGhost - Per Character Game Over Stuff
+* TheWorldMachinima - Softcoded Achievements
 
 ## Credits:
 * Shadow Mario - Programmer

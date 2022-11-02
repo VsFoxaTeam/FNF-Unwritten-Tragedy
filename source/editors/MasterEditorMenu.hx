@@ -26,15 +26,14 @@ class MasterEditorMenu extends MusicBeatState
 		'Dialogue Editor',
 		'Dialogue Portrait Editor',
 		'Character Editor',
-		'Chart Editor'
+		'Chart Editor',
+		'Stage Editor'
 	];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
-
 	private var curSelected = 0;
 	private var curDirectory = 0;
 	private var directoryTxt:FlxText;
-
 	override function create()
 	{
 		FlxG.camera.bgColor = FlxColor.BLACK;
@@ -42,15 +41,12 @@ class MasterEditorMenu extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("Editors Main Menu", null);
 		#end
-
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.scrollFactor.set();
 		bg.color = 0xFF353535;
 		add(bg);
-
 		grpTexts = new FlxTypedGroup<Alphabet>();
 		add(grpTexts);
-
 		for (i in 0...options.length)
 		{
 			var leText:Alphabet = new Alphabet(90, 320, options[i], true);
@@ -64,7 +60,6 @@ class MasterEditorMenu extends MusicBeatState
 		var textBG:FlxSprite = new FlxSprite(0, FlxG.height - 42).makeGraphic(FlxG.width, 42, 0xFF000000);
 		textBG.alpha = 0.6;
 		add(textBG);
-
 		directoryTxt = new FlxText(textBG.x, textBG.y + 4, FlxG.width, '', 32);
 		directoryTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER);
 		directoryTxt.scrollFactor.set();
@@ -74,17 +69,14 @@ class MasterEditorMenu extends MusicBeatState
 		{
 			directories.push(folder);
 		}
-
 		var found:Int = directories.indexOf(Paths.currentModDirectory);
 		if(found > -1) curDirectory = found;
 		changeDirectory();
 		#end
 		changeSelection();
-
 		FlxG.mouse.visible = false;
 		super.create();
 	}
-
 	override function update(elapsed:Float)
 	{
 		if (controls.UI_UP_P)
@@ -105,12 +97,10 @@ class MasterEditorMenu extends MusicBeatState
 			changeDirectory(1);
 		}
 		#end
-
 		if (controls.BACK)
 		{
 			MusicBeatState.switchState(new MainMenuState());
 		}
-
 		if (controls.ACCEPT)
 		{
 			switch(options[curSelected]) {
@@ -124,6 +114,8 @@ class MasterEditorMenu extends MusicBeatState
 					LoadingState.loadAndSwitchState(new DialogueCharacterEditorState(), false);
 				case 'Dialogue Editor':
 					LoadingState.loadAndSwitchState(new DialogueEditorState(), false);
+				case 'Stage Editor':
+					LoadingState.loadAndSwitchState(new StageEditorState(), false);
 				case 'Chart Editor'://felt it would be cool maybe
 					LoadingState.loadAndSwitchState(new ChartingState(), false);
 			}

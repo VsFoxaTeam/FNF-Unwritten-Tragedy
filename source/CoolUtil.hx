@@ -13,7 +13,16 @@ import sys.FileSystem;
 import openfl.utils.Assets;
 #end
 
+import openfl.net.FileReference;
+
 using StringTools;
+
+typedef FileSaveContext = 
+{
+	var content:String;
+	var format:String;
+	var fileDefaultName:String;
+}
 
 class CoolUtil
 {
@@ -23,14 +32,18 @@ class CoolUtil
 		'Hard'
 	];
 	public static var defaultDifficulty:String = 'Normal'; //The chart that has no suffix and starting difficulty on Freeplay/Story Mode
-
 	public static var difficulties:Array<String> = [];
-
 	inline public static function quantize(f:Float, snap:Float){
 		// changed so this actually works lol
 		var m:Float = Math.fround(f * snap);
 		trace(snap);
 		return (m / snap);
+	}
+
+	public static function saveFile(settings:FileSaveContext)
+	{
+		var file = new FileReference();
+		file.save(settings.content, settings.fileDefaultName + '.' + settings.format);
 	}
 	
 	public static function getDifficultyFilePath(num:Null<Int> = null)
