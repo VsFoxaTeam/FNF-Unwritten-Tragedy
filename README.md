@@ -27,6 +27,7 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 * Eventretta - Stage Editor
 * BeastlyGhost - Per Character Game Over Stuff
 * TheWorldMachinima - Softcoded Achievements
+* Chromasen and Erizur - Platform Util
 
 ## Credits:
 * Shadow Mario - Programmer
