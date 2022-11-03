@@ -990,7 +990,7 @@ class FunkinLua {
 		});
 
 		Lua_helper.add_callback(lua, "sendWinNotif", function(title:String = "", desc:String = "") {
-			sendWindowsNotification(title, desc, 0)
+			sendWindowsNotification(title, desc, 0);
 		});
 
 		Lua_helper.add_callback(lua, "promptSaveFile", function(fileName:String, content:String, extension:String) {
