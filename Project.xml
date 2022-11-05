@@ -63,6 +63,9 @@
 
 	<!-- Do you really wanna try that?-->
 	<error value="Nintendo Switch is not supported." if="switch" />
+	
+	<!-- MS-DOS isn't sweep -->
+	<error value="16 bit systems aren't supported. What, do you really want to run this mod in MS-DOS? Seriously?" if="16bits" />
 
 	<!-- DONT ENABLE THIS -->
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
