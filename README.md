@@ -55,14 +55,14 @@ _____________________________________
 
 
 ## Auto Detecting Winning Icons
-* For thse who wanna port FPS Plus FNF mods.
+* For those who wanna port FPS Plus FNF mods.
 
 ## Mod Support
 * Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
 * Comes with a Mod Organizing/Disabling Menu.
 
 ## Softcoded Achievements
-* Everyone asked for this, so here we go
+* Everyone asked for this, so here we go.
 * A comeback to tposejank's softcoded achievements!
 
 ## Atleast one change to every week:
