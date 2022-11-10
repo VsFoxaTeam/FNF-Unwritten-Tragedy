@@ -1,62 +1,68 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
 				14,
 				10
 			],
-			"indices": [],
-			"fps": 15,
 			"anim": "singUP",
-			"loop": true,
-			"name": "Screaming Up"
-		},
-		{
-			"offsets": [
-				20,
-				10
-			],
-			"indices": [],
 			"fps": 15,
-			"anim": "singDOWN",
-			"loop": true,
-			"name": "Screaming Down"
+			"name": "Screaming Up",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				20,
 				10
 			],
-			"indices": [],
-			"fps": 24,
-			"anim": "idle",
-			"loop": false,
-			"name": "Screaming Idle"
+			"anim": "singDOWN",
+			"fps": 15,
+			"name": "Screaming Down",
+			"indices": []
 		},
 		{
+			"loop": false,
+			"offsets": [
+				20,
+				10
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Screaming Idle",
+			"indices": []
+		},
+		{
+			"loop": true,
 			"offsets": [
 				31,
 				10
 			],
-			"indices": [],
-			"fps": 15,
 			"anim": "singLEFT",
-			"loop": true,
-			"name": "Screaming Left"
+			"fps": 15,
+			"name": "Screaming Left",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				20,
 				7
 			],
-			"indices": [],
-			"fps": 15,
 			"anim": "singRIGHT",
-			"loop": true,
-			"name": "Screaming Right"
+			"fps": 15,
+			"name": "Screaming Right",
+			"indices": []
 		}
 	],
-	"no_antialiasing": false,
+	"no_antialiasing": true,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
 	"image": "characters/ScreamingFaded",
 	"position": [
 		10,
@@ -65,9 +71,9 @@
 	"healthicon": "SadFox",
 	"flip_x": false,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		255,
+		209,
+		255
 	],
 	"camera_position": [
 		-240,

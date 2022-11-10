@@ -3,71 +3,77 @@
 		{
 			"offsets": [
 				20,
-				7
-			],
-			"indices": [],
-			"fps": 15,
-			"anim": "singRIGHT",
-			"loop": true,
-			"name": "MadFox Right"
-		},
-		{
-			"offsets": [
-				31,
 				10
 			],
 			"indices": [],
-			"fps": 15,
-			"anim": "singLEFT",
-			"loop": true,
-			"name": "MadFox Left"
-		},
-		{
-			"offsets": [
-				20,
-				10
-			],
-			"indices": [],
-			"fps": 24,
+			"fps": 20,
 			"anim": "idle",
-			"loop": true,
+			"loop": false,
 			"name": "MadFox Idle"
 		},
 		{
 			"offsets": [
-				20,
-				10
-			],
-			"indices": [],
-			"fps": 15,
-			"anim": "singDOWN",
-			"loop": true,
-			"name": "MadFox Down"
-		},
-		{
-			"offsets": [
-				14,
+				23,
 				10
 			],
 			"indices": [],
 			"fps": 15,
 			"anim": "singUP",
-			"loop": true,
+			"loop": false,
 			"name": "MadFox Up"
+		},
+		{
+			"offsets": [
+				20,
+				8
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "MadFox Down"
+		},
+		{
+			"offsets": [
+				30,
+				10
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "MadFox Left"
+		},
+		{
+			"offsets": [
+				10,
+				10
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "MadFox Right"
 		}
 	],
 	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
 	"image": "characters/MadFoxFaded",
 	"position": [
-		10,
+		220,
 		0
 	],
 	"healthicon": "MadFox",
 	"flip_x": false,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		255,
+		209,
+		255
 	],
 	"camera_position": [
 		-240,

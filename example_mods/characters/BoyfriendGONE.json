@@ -1,106 +1,112 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				5,
-				-2
-			],
 			"loop": false,
-			"fps": 15,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "BoyfriendLOL BFRight"
+			"fps": 15,
+			"name": "BoyfriendLOL BFRight",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-18,
 				3
 			],
-			"loop": false,
-			"fps": 15,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "BoyfriendLOL BFLeft"
+			"fps": 15,
+			"name": "BoyfriendLOL BFLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"loop": false,
-			"fps": 20,
 			"anim": "idle",
-			"indices": [],
-			"name": "BoyfriendLOL BFIdle"
+			"fps": 20,
+			"name": "BoyfriendLOL BFIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-10,
 				0
 			],
-			"loop": false,
-			"fps": 15,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "BoyfriendLOL BFDown"
+			"fps": 15,
+			"name": "BoyfriendLOL BFDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-29,
 				-3
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "BoyfriendLOL BFUp"
+			"fps": 24,
+			"name": "BoyfriendLOL BFUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-13,
 				9
 			],
-			"loop": false,
-			"fps": 15,
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "BoyfriendLOL MissLeft"
+			"fps": 15,
+			"name": "BoyfriendLOL MissLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-6,
 				7
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "BoyfriendLOL MissUp"
+			"fps": 24,
+			"name": "BoyfriendLOL MissUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-15,
 				1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "BoyfriendLOL MissDown"
+			"fps": 24,
+			"name": "BoyfriendLOL MissDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-24,
 				12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "BoyfriendLOL MissRight"
+			"fps": 24,
+			"name": "BoyfriendLOL MissRight",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
+	"gameover_properties": [
+		"death",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
 	"image": "characters/BoyfriendGONE",
 	"position": [
 		-700,

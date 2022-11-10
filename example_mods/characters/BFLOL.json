@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				5,
-				-2
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 15,
@@ -14,7 +14,7 @@
 		{
 			"offsets": [
 				-18,
-				3
+				-4
 			],
 			"loop": false,
 			"fps": 15,
@@ -25,7 +25,7 @@
 		{
 			"offsets": [
 				-5,
-				0
+				-7
 			],
 			"loop": false,
 			"fps": 20,
@@ -36,7 +36,7 @@
 		{
 			"offsets": [
 				-10,
-				0
+				-8
 			],
 			"loop": false,
 			"fps": 15,
@@ -47,7 +47,7 @@
 		{
 			"offsets": [
 				-29,
-				-3
+				-7
 			],
 			"loop": false,
 			"fps": 24,
@@ -101,6 +101,12 @@
 		}
 	],
 	"no_antialiasing": false,
+	"gameover_properties": [
+		"death",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
 	"image": "characters/BoyfriendLOL",
 	"position": [
 		-650,
@@ -109,9 +115,9 @@
 	"healthicon": "BFLOL",
 	"flip_x": true,
 	"healthbar_colors": [
-		49,
-		176,
-		209
+		45,
+		178,
+		210
 	],
 	"camera_position": [
 		-20,

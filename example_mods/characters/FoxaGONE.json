@@ -1,62 +1,68 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				20,
 				10
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "FoxaSad Idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "FoxaSad Idle"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				31,
 				10
 			],
-			"anim": "singLEFT",
+			"loop": true,
 			"fps": 15,
-			"name": "FoxaSad Left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "FoxaSad Left"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				20,
 				10
 			],
-			"anim": "singDOWN",
+			"loop": true,
 			"fps": 15,
-			"name": "FoxaSad Down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "FoxaSad Down"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				14,
 				10
 			],
-			"anim": "singUP",
+			"loop": true,
 			"fps": 15,
-			"name": "FoxaSad Up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "FoxaSad Up"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				20,
 				7
 			],
-			"anim": "singRIGHT",
+			"loop": true,
 			"fps": 15,
-			"name": "FoxaSad Right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "FoxaSad Right"
 		}
 	],
 	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
 	"image": "characters/FoxaGONE",
 	"position": [
 		220,
@@ -65,9 +71,9 @@
 	"healthicon": "SadFox",
 	"flip_x": false,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		255,
+		209,
+		255
 	],
 	"camera_position": [
 		-360,
