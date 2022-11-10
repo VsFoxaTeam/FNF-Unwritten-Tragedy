@@ -1,4 +1,6 @@
 criticize flp cuz too big for github: https://drive.google.com/file/d/1AwSRwbwQLOJZO1tu2xIZewlcuQalcBPD/view?usp=sharing
+
+UPDATED REPO CUZ IT HAS THE CREDITS IN THE README https://github.com/VsFoxaTeam/FNF-Unfulfilled-Journey-V2
 # Friday Night Funkin' - Journey Engine
 An engine based off on Psych Engine that was originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
