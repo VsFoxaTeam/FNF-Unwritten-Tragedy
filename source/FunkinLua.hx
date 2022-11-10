@@ -2805,6 +2805,10 @@ class FunkinLua {
 			#end
 			return list;
 		});
+					
+	        Lua_helper.add_callback(lua, "getGameplayChangerValue", function(tag:String) {
+			return ClientPrefs.getGameplaySetting(tag, false);
+		});
 
 		call('onCreate', []);
 		#end
