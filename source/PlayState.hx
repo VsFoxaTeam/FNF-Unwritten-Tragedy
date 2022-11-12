@@ -3919,6 +3919,10 @@ class PlayState extends MusicBeatState
 					boyfriend.heyTimer = time;
 				}
 
+            case 'Camera Flash':
+			    FlxG.camera.flash(FlxColor.WHITE, 1);
+			case 'Camera Fade':
+			    FlxG.camera.fade(FlxColor.BLACK);
 			case 'Set GF Speed':
 				var value:Int = Std.parseInt(value1);
 				if (Math.isNaN(value) || value < 1)
