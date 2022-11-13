@@ -2441,8 +2441,8 @@ class PlayState extends MusicBeatState
 					case 0:
 						case 0:	
 						//trace(songName);
-						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song); + '+' + 'intro3'))) {
-							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song); + '+' + 'intro3', 'ogg'), 0.6);
+						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song) + '+' + 'intro3'))) {
+							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song) + '+' + 'intro3', 'ogg'), 0.6);
 						} else {
 							FlxG.sound.play(Paths.sound('intro3' + introSoundsSuffix), 0.6);
 						}
@@ -2466,8 +2466,8 @@ class PlayState extends MusicBeatState
 								countdownReady.destroy();
 							}
 						});
-						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song); + '+' + 'intro2'))) {
-							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song); + '+' + 'intro2', 'ogg'), 0.6);
+						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song) + '+' + 'intro2'))) {
+							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song) + '+' + 'intro2', 'ogg'), 0.6);
 						} else {
 							FlxG.sound.play(Paths.sound('intro2' + introSoundsSuffix), 0.6);
 						}
@@ -2490,8 +2490,8 @@ class PlayState extends MusicBeatState
 								countdownSet.destroy();
 							}
 						});
-						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song); + '+' + 'intro1'))) {
-							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song); + '+' + 'intro1', 'ogg'), 0.6);
+						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song) + '+' + 'intro1'))) {
+							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song) + '+' + 'intro1', 'ogg'), 0.6);
 						} else {
 							FlxG.sound.play(Paths.sound('intro1' + introSoundsSuffix), 0.6);
 						}
@@ -2516,8 +2516,8 @@ class PlayState extends MusicBeatState
 								countdownGo.destroy();
 							}
 						});
-						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song); + '+' + 'introGo'))) {
-							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song); + '+' + 'introGo', 'ogg'), 0.6);
+						if (FileSystem.exists(Paths.modsSounds('sounds', Paths.formatToSongPath(SONG.song) + '+' + 'introGo'))) {
+							FlxG.sound.play(Paths.sound(Paths.formatToSongPath(SONG.song) + '+' + 'introGo', 'ogg'), 0.6);
 						} else {
 							FlxG.sound.play(Paths.sound('introGo' + introSoundsSuffix), 0.6);
 						}
