@@ -1,6 +1,7 @@
 {
-	"name": "an unfufilled journey.",
-	"description": "I'LL SHOW YOU WHAT A GOOD MOD LOOKS LIKE...",
+	"name": "OVERKILL",
+	"description": "DON'T TRUST HIM. DELETE THE GAME NOW",
 	"restart":false,
+	"runsGlobally": false,
 	"color": [170, 0, 255]
 }
