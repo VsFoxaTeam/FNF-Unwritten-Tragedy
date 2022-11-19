@@ -1,0 +1,54 @@
+{
+	"song": {
+		"speed": 2.2,
+		"stage": "SpookyAlley",
+		"player1": "FakeBF",
+		"player2": "FoxaSus",
+		"player3": null,
+		"events": [
+			[
+				98181.8181818181,
+				[
+					[
+						"FlipUI",
+						"",
+						""
+					]
+				]
+			],
+			[
+				100772.727272727,
+				[
+					[
+						"Play Animation",
+						"KILL",
+						"BF"
+					],
+					[
+						"Play Animation",
+						"DEATH",
+						"FoxaSus"
+					]
+				]
+			],
+			[
+				101863.636363636,
+				[
+					[
+						"Image Event",
+						"Black",
+						"60"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "invisible",
+		"bpm": 110,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Overkill"
+	}
+}

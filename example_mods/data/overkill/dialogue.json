@@ -1,0 +1,68 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue",
+			"speed": 0.08,
+			"portrait": "Foxa",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Wait... Boyfriend...?"
+		},
+		{
+			"sound": "dialogue",
+			"speed": 0.08,
+			"portrait": "Foxa",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What are YOU doing here?"
+		},
+		{
+			"sound": "",
+			"speed": 0.21,
+			"portrait": "FRIEND",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bop."
+		},
+		{
+			"sound": "",
+			"speed": 0.08,
+			"portrait": "Foxa",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Isn't it a bit late to be roaming around in these hours?"
+		},
+		{
+			"sound": "dialogue",
+			"speed": 0.12,
+			"portrait": "friend",
+			"boxState": "normal",
+			"expression": "TALK",
+			"text": "Beep... Bop...."
+		},
+		{
+			"sound": "",
+			"speed": 0.08,
+			"portrait": "Foxa",
+			"boxState": "normal",
+			"expression": "TALK",
+			"text": "And.... Where is your pesky \"Girlfriend\" at?"
+		},
+		{
+			"sound": "dialogue",
+			"speed": 0.09,
+			"portrait": "Foxa",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Isn't she normally with you...?"
+		},
+		{
+			"sound": " ",
+			"speed": 0.35,
+			"portrait": "FRIEND",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		}
+	]
+}
