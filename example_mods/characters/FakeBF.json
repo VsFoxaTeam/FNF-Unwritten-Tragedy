@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				295,
+				268
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singUP",
+			"indices": [],
+			"name": "FakeBF Up"
+		},
+		{
+			"offsets": [
+				285,
+				267
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "FakeBF Idle"
+		},
+		{
+			"offsets": [
+				298,
+				269
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "FakeBF Right"
+		},
+		{
+			"offsets": [
+				290,
+				269
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "FakeBF Down"
+		},
+		{
+			"offsets": [
+				297,
+				268
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "FakeBF Left"
+		},
+		{
+			"offsets": [
+				304,
+				267
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "FakeBF Miss Up"
+		},
+		{
+			"offsets": [
+				305,
+				271
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "FakeBF Miss Down"
+		},
+		{
+			"offsets": [
+				297,
+				274
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "FakeBF Miss Left"
+		},
+		{
+			"offsets": [
+				316,
+				272
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "FakeBF Miss Right"
+		},
+		{
+			"offsets": [
+				310,
+				270
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "KILL",
+			"indices": [],
+			"name": "FakeBF KILL"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/FakeBF",
+	"position": [
+		-160,
+		330
+	],
+	"healthicon": "FakeBF",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		710,
+		-412
+	],
+	"sing_duration": 4,
+	"scale": 1.5
+}

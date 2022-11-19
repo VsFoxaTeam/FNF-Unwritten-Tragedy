@@ -1,41 +1,41 @@
 {
 	"animations": [
 		{
-			"loop": true,
-			"offsets": [
-				37,
-				13
-			],
-			"anim": "deathLoop",
-			"fps": 15,
-			"name": "death Death Idle",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				37,
-				13
-			],
-			"anim": "firstDeath",
-			"fps": 15,
-			"name": "death Death Idle",
-			"indices": []
-		},
-		{
-			"loop": false,
 			"offsets": [
 				37,
 				16
 			],
-			"anim": "deathConfirm",
+			"indices": [],
 			"fps": 10,
-			"name": "death DeathConfirm",
-			"indices": []
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "Death screen Go Back"
+		},
+		{
+			"offsets": [
+				37,
+				13
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "firstDeath",
+			"loop": true,
+			"name": "Death screen Dont Trust Him"
+		},
+		{
+			"offsets": [
+				37,
+				13
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "Death screen Dont Trust Him"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/death",
+	"image": "characters/Death screen",
 	"position": [
 		-620,
 		40
@@ -52,5 +52,5 @@
 		100
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.5
 }
