@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="FakeBF.png">
+<SubTexture name="FakeBF Idle0000" x="2545" y="1297" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Idle0001" x="0" y="3305" width="661" height="610" frameX="-447" frameY="-107" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Idle0002" x="2551" y="2666" width="629" height="620" frameX="-472" frameY="-97" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Idle0003" x="1920" y="2666" width="631" height="631" frameX="-473" frameY="-86" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Idle0004" x="2545" y="1297" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Right0000" x="0" y="1361" width="643" height="655" frameX="-504" frameY="-62" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Right0001" x="2545" y="0" width="629" height="652" frameX="-516" frameY="-68" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Up0000" x="652" y="703" width="640" height="657" frameX="-483" frameY="-60" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Up0001" x="1855" y="657" width="619" height="656" frameX="-492" frameY="-61" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Left0000" x="0" y="2666" width="650" height="639" frameX="-441" frameY="-78" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Left0001" x="2545" y="652" width="629" height="645" frameX="-470" frameY="-72" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Right0000" x="0" y="703" width="652" height="658" frameX="-505" frameY="-61" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Right0001" x="640" y="2016" width="630" height="648" frameX="-516" frameY="-68" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Up0000" x="643" y="1361" width="688" height="654" frameX="-493" frameY="-62" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Up0001" x="1855" y="0" width="690" height="657" frameX="-485" frameY="-63" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Down0000" x="1270" y="2016" width="657" height="646" frameX="-470" frameY="-74" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Down0001" x="650" y="2666" width="639" height="634" frameX="-482" frameY="-83" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Left0000" x="1331" y="1361" width="667" height="653" frameX="-438" frameY="-67" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Miss Left0001" x="0" y="2016" width="640" height="650" frameX="-469" frameY="-69" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0000" x="1927" y="2016" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0001" x="661" y="3305" width="661" height="610" frameX="-447" frameY="-107" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0002" x="1241" y="0" width="614" height="670" frameX="-478" frameY="-47" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0003" x="1289" y="2666" width="631" height="634" frameX="-473" frameY="-86" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0004" x="3174" y="0" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0005" x="3174" y="644" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0006" x="3174" y="0" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0007" x="3174" y="644" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0008" x="3174" y="1288" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0009" x="3174" y="0" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0010" x="3174" y="644" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0011" x="3174" y="1288" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0012" x="3174" y="0" width="629" height="644" frameX="-487" frameY="-73" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0013" x="1322" y="3305" width="661" height="610" frameX="-447" frameY="-107" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0014" x="627" y="0" width="614" height="673" frameX="-478" frameY="-47" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF KILL0015" x="0" y="0" width="627" height="703" frameX="-417" frameY="-17" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Down0000" x="3174" y="1932" width="629" height="627" frameX="-482" frameY="-90" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FakeBF Down0001" x="3803" y="0" width="629" height="619" frameX="-476" frameY="-98" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
