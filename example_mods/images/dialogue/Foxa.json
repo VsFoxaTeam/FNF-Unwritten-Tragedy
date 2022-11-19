@@ -1,0 +1,24 @@
+{
+	"position": [
+		-350,
+		-170
+	],
+	"dialogue_pos": "left",
+	"scale": 0.85,
+	"image": "Foxa",
+	"animations": [
+		{
+			"loop_offsets": [
+				-130,
+				0
+			],
+			"anim": "TALK",
+			"idle_offsets": [
+				-130,
+				0
+			],
+			"loop_name": "Foxa TALK",
+			"idle_name": "Foxa TALK0003"
+		}
+	]
+}

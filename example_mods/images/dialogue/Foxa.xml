@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Foxa.png">
+<SubTexture name="Foxa TALK0000" x="0" y="0" width="856" height="720" frameX="-44" frameY="0" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Foxa TALK0001" x="856" y="0" width="900" height="720" frameX="-44" frameY="0" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Foxa TALK0002" x="0" y="720" width="914" height="719" frameX="-44" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Foxa TALK0003" x="1756" y="0" width="921" height="716" frameX="-44" frameY="-4" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

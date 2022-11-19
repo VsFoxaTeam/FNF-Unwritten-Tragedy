@@ -1,0 +1,25 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		-280,
+		-170
+	],
+	"no_antialiasing": false,
+	"scale": 0.8,
+	"animations": [
+		{
+			"loop_name": "FRIEND TALK",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "FRIEND TALK0003",
+			"anim": "TALK",
+			"loop_offsets": [
+				0,
+				-3
+			]
+		}
+	],
+	"image": "FRIEND"
+}

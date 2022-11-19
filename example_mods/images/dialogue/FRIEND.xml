@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="FRIEND.png">
+<SubTexture name="FRIEND TALK0000" x="0" y="0" width="890" height="711" frameX="-170" frameY="-9" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FRIEND TALK0001" x="890" y="0" width="895" height="705" frameX="-157" frameY="-15" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FRIEND TALK0002" x="0" y="711" width="891" height="705" frameX="-152" frameY="-15" frameWidth="1280" frameHeight="720" />
+<SubTexture name="FRIEND TALK0003" x="891" y="711" width="860" height="698" frameX="-191" frameY="-22" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
